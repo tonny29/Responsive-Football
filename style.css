@@ -1,38 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0px;;
+   margin: 0px;
+   padding: 0px;
 }
 .container{
     margin-bottom: 158px;
 }
+span{
+    color: orangered;
+}
 /* top banner heading styles  */
 header{
-    /* width: 1440px; */
+    width: 1519px;
     height: 677px;
     background-color: lightblue;
     margin-bottom: 70px;
 }
-header:hover h2{
+header:hover .top-title{
     color: #28b8e0;
-    transform: scaleY(1.5);
+    transform: scaleX(1.5);
 }
 
-.navigation-bar{
+.top-desing{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     
+    
 }
-nav h2{
+.top-title{
     font-size: 64px;
+    width: 485px;
+    height: 230px;
     margin-left: 156px;
-    margin-top: 207px;
+    margin-bottom: 27px;
     transition: width 5s linear ,height 5s linear, transform 3s;
 }
-nav a{
+#anchor{
     color: blue;
     background-color: white;
-    margin-left: 156px;
+    margin-bottom: 127px;
     text-decoration: none;
     font-size: 16px;
     border: 3px solid gray;
@@ -41,14 +48,16 @@ nav a{
     padding: 10px 24px;
     
 }
-nav a:hover{
+.top-title a:hover{
     color: white;
     background-color: blue;
 }
-nav img{
+.top-banner img{
     width: 556px;
     height: 438px;
     margin-top: 153px;
+    margin-left: 124px;
+    
 }
 
 /* --------------------------------
@@ -91,9 +100,10 @@ goal side area
     text-align: center;
     margin-left: 216px;
     border-radius: 50px;
+    background-color: rgb(112, 146, 160);
 }
 
-.top-title{
+.top-score{
     margin-bottom: 5px;
     padding-top: 10px;
 }
@@ -137,6 +147,25 @@ hr{
     border: 2px solid gray;
     margin-bottom: 63px;
 }
+/* ------------------------
+        dollars styles add
+----------------------------*/
+.dollars{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 1063px;
+    margin-left: 16px;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    
+
+}
+.dollar{
+    box-shadow:  0px 0px 40px grey;;
+    padding-left: 5px;
+    border-radius: 50px;
+    background-color: skyblue;
+}
 /* -------------------------
            footer styles 
    ----------------------- */
@@ -159,4 +188,12 @@ footer img{
 }
 footer h3{
     margin-bottom: 63px;
+}
+/* media query   */
+/* mobile device  */
+@media  only screen and (max-width:688px) {
+    header{
+        background-color: palegreen;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
