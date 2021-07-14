@@ -3,7 +3,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0px;;
 }
-main{
+.container{
     margin-bottom: 158px;
 }
 /* top banner heading styles  */
@@ -30,19 +30,20 @@ nav h2{
     transition: width 5s linear ,height 5s linear, transform 3s;
 }
 nav a{
-    color: black;
+    color: blue;
     background-color: white;
     margin-left: 156px;
     text-decoration: none;
     font-size: 16px;
-    border: 3px solid darkred;
-    border-radius: 10px;
+    border: 3px solid gray;
+    box-shadow: 0px 0px 40px grey;
+    border-radius: 15px;
     padding: 10px 24px;
     
 }
 nav a:hover{
     color: white;
-    background-color: black;
+    background-color: blue;
 }
 nav img{
     width: 556px;
@@ -53,8 +54,8 @@ nav img{
 /* --------------------------------
         section player styles 
 ------------------------------------ */
-.container{
-    display: flex;
+.players{
+    display: grid;
     grid-template-columns: repeat(3,.1fr);
     grid-column-gap: 30px;
     padding: 15px;
@@ -80,6 +81,61 @@ p{
 .margin{
     margin-left: 14px;
     margin-top: 14px;
+}
+/*------------------------
+goal side area  
+---------------------------- */
+.border{
+    width: 1094px;
+    box-shadow: 0px 0px 40px grey;
+    text-align: center;
+    margin-left: 216px;
+    border-radius: 50px;
+}
+
+.top-title{
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+.goal-desing{
+    display: grid;
+    grid-template-columns: repeat(2,.1fr);
+    grid-column-gap: 30px;
+    padding: 15px;
+    justify-content: center;
+    
+}
+
+.goals{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid lightblue;
+    background-color: gainsboro;
+    border-radius: 25px;
+    width: 500px;
+    margin-top: 2px;
+    padding-left: 5px;
+    padding-right: 10px;
+
+}
+.goal{
+    display: flex;
+    align-items: center;
+    grid-column-gap: 30px;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+.fas{
+    color: blue;
+}
+.county{
+    margin-left: 50px;
+}
+hr{
+    margin-top: 44px;
+    width: 1270px;
+    border: 2px solid gray;
+    margin-bottom: 63px;
 }
 /* -------------------------
            footer styles 
