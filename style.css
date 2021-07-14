@@ -5,6 +5,15 @@
 /* --------------------------------
         common styles or utilize
 ---------------------------------- */
+.fa-sign-in-alt{
+    background-color: green;
+    color: white;
+    width: 123px;
+height: 44px;
+margin-left: 1037px;
+padding: 10px;
+font-size: 34px;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
    margin: 0px;
@@ -145,7 +154,7 @@ goal side area
     padding-left: 6px;
     padding-right: 10px;
 }
-.fas{
+.fa-futbol{
     color: blue;
 }
 .county{
